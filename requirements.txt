@@ -1,3 +1,5 @@
-requests
 moviepy
+ffmpeg-python
 scenedetect
+requests
+huggingface_hub
