@@ -1,0 +1,13 @@
+workflows:
+  python-apk:
+    name: Python to APK
+    environment:
+      vars:
+        PACKAGE_NAME: "com.example.trailermaker"
+    scripts:
+      - name: Install requirements
+        script: pip install -r requirements.txt
+      - name: Run script
+        script: python main.py
+    artifacts:
+      - trailer.mp4
